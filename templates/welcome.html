@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+   {{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{title}}</h1>
+    <hr>
+    {% if username== 'kritkan' %}
+            <h3>Hello, {{username}}</h3>
+            blockofcode
+    {% else %}
+            <h3>Hello, Guest</h3>
+    {% endif %}
+    
+{% endblock %}
+

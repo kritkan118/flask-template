@@ -1,0 +1,31 @@
+{% extends 'layout.template' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{title}}</h1>
+    <hr>
+    <!-- <h2>My Favorite Foods</h2> -->
+    <!-- <h3>1. {{ foods[0] }}</h3> -->
+    <!-- <h3>2. {{ foods[1] }}</h3> -->
+    <!-- <h3>3. {{ foods[2] }}</h3> -->
+    <!-- <h3>4. {{ foods[3] }}</h3> -->
+    <!-- <h3>5. {{ foods[4] }}</h3> -->
+
+    <!-- <ol>
+        <li>{{foods[0]}}</li>
+        <li>{{foods[1]}}</li>
+        <li>{{foods[2]}}</li>
+        <li>{{foods[3]}}</li>
+        <li>{{foods[4]}}</li>
+    </ol> -->
+
+    <ol>
+        {% for food in foods %}
+            <li>{{food}}</li>
+        {% endfor %}
+    </ol>
+{% endblock %}
+
