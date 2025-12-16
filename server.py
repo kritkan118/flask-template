@@ -40,3 +40,11 @@ def geeting(username):
     return render_template('welcome.html',
                            title=title,
                            username=username)
+
+@app.route('/movies')
+def movies():
+    title='Favorite Movies Page'
+    movies = ['ไทยบ้าน เดอะซีรี่ย์','ธี่หยด','สัปเหร่อ','เซียนหรั่ง เดอะมูฟวี่','คิดถึงวิทยา']
+    return render_template('movies.html',
+                           title=title,
+                            movies=movies,)
